@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+:root{
+    --color-primary: #444cf7;
+    --color-tittle: #000;
+    --align-tittle: left;
+    --padding-container: 15px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --height-shape: 18em;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5F7;
+    opacity: 1;
+    background-image:  radial-gradient(#444CF7 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#444CF7 0.7000000000000001px, #E5E5F7 0.71px);
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
+}
+
+.container{
+    width: var(--width-container);
+    max-width: var(--max-width-container);
+    padding: var(--padding-container);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hero{
+    position: relative;
+    --padding-container: 0;
+}
+
+.main{
+    background-color: white;
+}
+
+.tittle{
+    font-size: 1.6rem;
+    text-align: var(--align-tittle);
+    color: var(--color-tittle);
+}
+
+.datospersonales::after{
+    text-align: center;
+}
+
+.datospersonales__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
