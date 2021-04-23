@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1116ca9adb.js"></script>
+</head>
+
+<body>
+    <form class="form-container" onsubmit="return validate()">
+        <p id="error"></p>
+        <h3>Login</h3>
+        <div class="form-grp">
+            <label for="=username">Username</label><br>
+            <input type="text" name="username" placeholder="Username" id="user">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+        </div>
+        <div class="form-grp">
+            <label for="=password">Password</label><br>
+            <input type="password" name="password" placeholder="Password" id="pass">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+        </div>
+        <div class="form-grp">
+            <input type="submit" name="login-btn" value="Login">
+        </div>
+    </form>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
