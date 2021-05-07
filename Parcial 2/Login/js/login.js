@@ -18,7 +18,7 @@ var pass = document.querySelector('#pass');
 pass.addEventListener('keyup', function () {
     var p_times = document.querySelector('.p_times');
     var p_check = document.querySelector('.p_check');
-    if (pass.value.length == 0 || pass.value.length < 6) {
+    if (pass.value.length == 0 || pass.value.length < 8) {
         pass.style.border = '1px solid red';
         p_times.style.display = 'block';
         p_check.style.display = 'none';
