@@ -11,5 +11,5 @@ create table usuarios
     primary key (idUsuario)
 );
 
-insert into usuarios (idUsuario, usuario, correo, password)
+insert into usuarios (usuario, correo, password)
 values ('GermanTorres', 'gtorresg@live.com', 'L16100283');
