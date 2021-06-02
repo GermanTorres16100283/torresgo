@@ -9,7 +9,7 @@ create table usuarios
     correo varchar(50),
     password varchar(200),
     primary key (idUsuario)
-)
+);
 
 insert into usuarios (idUsuario, usuario, correo, password)
 values ('GermanTorres', 'gtorresg@live.com', 'L16100283');
