@@ -15,6 +15,7 @@
         } else {
             $message = 'Error al crear usuario, ingrese bien los valores';
         }
+        
     }
 ?>
 
