@@ -1,9 +1,8 @@
 <?php
-
     $server = 'localhost';
     $username = 'root';
     $password = '';
-    $database = 'sistema_usuario';
+    $database = 'videojuegos';
 
     try {
         $conn = new PDO("mysql:host=$server; dbname=$database;", $username, $password);

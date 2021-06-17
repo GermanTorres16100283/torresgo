@@ -1,9 +1,9 @@
 <?php
     session_start();
-    require 'database.php';
+    require 'partials/database.php';
 
     if (isset($_SESSION['user_id'])) {
-        $records = $conn->prepare('SELECT id, user, password FROM users Where id = :id');
+        $records = $conn->prepare('SELECT id, user, password FROM usuario Where id = :id');
         $records->bindParam(':id', $_SESSION['user_id']);
         $records->execute();
         $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="partials/header.php">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
-    <title>Sistema Usuarios</title>
+    <title>Inicio</title>
 </head>
 <body>
 
@@ -36,7 +36,9 @@
     <br>
     <p>Bienvenido <?= $user['user'] ?></p>
     <br>
-    <a href="task.php">Base de datos</a>
+    <a href="tabla.php">Base de datos</a>
+    <p></p>
+    <a href="logout.php">Logout</a>
     
     <?php else: ?>
         <link rel="stylesheet" href="assets/style.css">

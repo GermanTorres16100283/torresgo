@@ -5,10 +5,10 @@
         header('Location: /ProyectoFinal');
     }
 
-    require 'database.php';
+    require 'partials/database.php';
 
     if (!empty($_POST['user']) && !empty($_POST['password'])) {
-        $records = $conn->prepare('SELECT id, user, password FROM users WHERE user=:user');
+        $records = $conn->prepare('SELECT id, user, password FROM usuario WHERE user=:user');
         $records->bindParam(':user', $_POST['user']);
         $records->execute();
         $results = $records->fetch(PDO::FETCH_ASSOC);

@@ -1,10 +1,10 @@
 <?php 
-    require 'database.php';
+    require 'partials/database.php';
 
     $message = '';
 
     if (!empty($_POST['user']) && !empty($_POST['password'])) {
-        $sql = "INSERT INTO users (user, password) VALUES (:user, :password)";
+        $sql = "INSERT INTO usuario (user, password) VALUES (:user, :password)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':user',$_POST['user']);
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -15,7 +15,6 @@
         } else {
             $message = 'Error al crear usuario, ingrese bien los valores';
         }
-        
     }
 ?>
 
