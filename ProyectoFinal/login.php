@@ -31,7 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="partials/header.php">
-    <title>Sistema Usuarios | Login</title>
+    <title>Login</title>
 </head>
 <body>
     <?php require 'partials/header.php' ?>
